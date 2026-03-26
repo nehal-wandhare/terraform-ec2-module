@@ -8,7 +8,7 @@ resource "aws_instance" "ec2" {
   associate_public_ip_address = var.public_ip
 
   tags = {
-    Name        = var.instance_name
+    Name        = "${var.environment}-${var.instance_name}"
     Environment = var.environment
   }
 }
