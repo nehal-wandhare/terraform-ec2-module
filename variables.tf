@@ -16,4 +16,7 @@ variable "public_ip" {
 }
 
 variable "instance_name" {}
-variable "environment" {}
+variable "environment" {
+  description = "Environment name (dev/test/prod)"
+  type        = string
+}
